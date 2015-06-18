@@ -124,11 +124,20 @@ nav {
 }
 
 .app {
-  padding-top: 50px;
+  padding: 50px 20px 0;
 
   blockquote {
-    margin-top: 80px;
+    margin: 80px 0 50px;
     font-size: 18px;
+  }
+
+  .showoff {
+    background: url('../img/app.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+    height: 460px;
+    width: 100%;
   }
 }
 
