@@ -3,7 +3,7 @@
 
 $white: #fff;
 $black: #1a1a1a;
-$green: #43b77b;
+$red: #fc433d;
 $grey: #989898;
 $screen-xs-max: 767px;
 
@@ -41,7 +41,7 @@ h1 {
 h2 {
   margin-top: 0;
   font-weight: 300;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   font-size: 24px;
 }
 
@@ -49,15 +49,12 @@ nav {
   padding-bottom: 100px;
 
   .logo {
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: 600;
+    width: 100%;
   }
 }
 
 
 .hero {
-  background: url('../img/bg.png');
   background-size: cover;
   padding-top: 40px;
   background-color: $black;
@@ -96,11 +93,11 @@ nav {
   overflow: hidden;
   color: #FFF;
   text-transform: uppercase;
-  background-color: $green;
+  background-color: $red;
   color: $white;
 
   &:hover {
-    background-color: darken($green, 10%);
+    background-color: darken($red, 10%);
     color: darken($white, 10%);
   }
 }
@@ -163,7 +160,7 @@ h4 {
   }
 
   .love {
-    color: $green;
+    color: $red;
     font-weight: 600;
   }
 
