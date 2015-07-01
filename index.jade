@@ -19,10 +19,16 @@ html
             h1 Use email signature
             h2 Check if your email was opened in your email client
         .row.call-to-action
-          .col-md-5.col-sm-7
-            input.form-control(type='email' placeholder='Your Best Email')
-          .col-md-3.col-sm-5
-            a.btn#get-a-lift(href='#') Use it - I'm a human
+          form#mc-embedded-subscribe-form.validate(action='//domasbitvinskas.us10.list-manage.com/subscribe/post?u=f84937ea3dcb3a0e8caee05e2&id=398ca79174', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
+            .col-md-5.col-sm-7
+              input#mce-EMAIL.form-control(type='email' placeholder='Your Best Email' name='EMAIL')
+            .col-md-3.col-sm-5
+              input.btn.get-a-lift#mc-embedded-subscribe(type='submit', value="Use it - I'm a human", name='subscribe')
+            .col-md-12#mce-responses.clear
+              #mce-error-response.response(style='display:none')
+              #mce-success-response.response(style='display:none')
+            div(style='position: absolute; left: -5000px;')
+              input(type='text', name='b_f84937ea3dcb3a0e8caee05e2_398ca79174', tabindex='-1', value='')
         .row.showoff
           .col-md-offset-2.col-md-8
             img.img-responsive(src='/img/showoff2.png')
