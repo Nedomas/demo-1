@@ -5,6 +5,7 @@ html
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0')
     link(rel='stylesheet', href='css/app.css')
+    script(src='js/app.js')
   body
     .hero
       .container
@@ -15,20 +16,34 @@ html
         .row
           .col-md-10
             h1 Use email signature
-            h2 Check if email was opened in your email client
+            h2 CHECK IF EMAIL WAS OPENED IN YOUR EMAIL CLIENT
         .row.call-to-action
-          .col-md-3.col-sm-7
-            a.btn#get-a-lift(href='http://humanemails.com/users/sign_up') Use it - I'm a human
-        .row(style='padding-top: 50px;')
-          .col-md-6
-            img.img-responsive(src='https://cloud.githubusercontent.com/assets/1877286/8413895/2fd4c808-1e94-11e5-8222-2c69d3721e97.png')
-          .col-md-6
-            img.img-responsive(src='https://cloud.githubusercontent.com/assets/1877286/8413897/32987922-1e94-11e5-8206-c2935b413ddf.png')
+          .col-md-5.col-sm-7
+            input.form-control(type='email' placeholder='Your Best Email')
+          .col-md-3.col-sm-5
+            a.btn#get-a-lift(href='#') Use it - I'm a human
 
     .container
-        .companies
-          .row.text-center
-            h5 Yeah, this is a MVP. Its not pretty. But it works.
+      .companies
+        .row.text-center
+          .find-out Our pilot companies that chosen to work with us
+        .row
+          .company-logos
+
+      .app
+        .row
+          .col-md-6
+            h3 All around the world
+            p
+              | Our app uses the best technology to fit all of the clients.
+              | It reaches more and more users every day.
+              | Can you imagine how easy it is to find a cab now?
+
+            blockquote
+              p It's an amazing app to explore
+              footer Someone famous
+          .col-md-4.col-md-offset-2.text-center
+            img(src='/img/app.png')
 
     .footer
       .container
@@ -37,8 +52,7 @@ html
             .map
           .col-xs-6.col-xs-offset-1
             h4 Built for everyone by
-            h4.love Domas Bitvinskas.
-
-            ul.menu
-              li
-                a(href='mailto:domas.bitvinskas@me.com') domas.bitvinskas@me.com
+            h4.love 
+              | team behind 
+              a(href='http://closeheat.com' target='_blank') closeheat
+              | .
